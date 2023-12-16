@@ -46,6 +46,19 @@ _(availability)_
 
 - /health (optional parameter: **`?from=`**)
 
+# Local run
+
+After `python server.py` the server will run on http://localhost:5000.
+
+# Docker
+
+```bash
+docker build -t thedavidbarton/harry-potter .
+docker run -p 1000:5000 -d thedavidbarton/harry-potter
+```
+
+Then you can access the api on http://localhost:1000/
+
 # Copyright
 
 The Harry Potter Database is a non-commercial open source project.
